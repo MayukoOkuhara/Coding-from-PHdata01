@@ -1,0 +1,128 @@
+@charset utf-8;
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.gl-header {
+    background-color: #343a40;
+    height: 80px;
+    padding-top: 30px;
+}
+
+.gl_nav {
+    overflow: hidden;
+}
+.gl_nav h1 {
+    float: left;
+}
+.gl_nav h1 a {
+    display: block;
+    width: 154px;
+    height: 25px;
+    text-indent: -9999px;
+    background-image: url(../images/logo.jpg);
+}
+
+.gl_nav ul {
+    overflow: hidden;
+}
+.gl_nav ul li {
+    float: left;
+    margin-left: 12px;
+}
+.gl_nav ul li:first-child {
+    margin-left: 42px;
+}
+.gl_nav li a {
+    color: #d4d3d3;
+}
+
+.main {
+    height: 400px;
+    background-color: #343b41;
+    background-image: url(../images/mainimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.top-topics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.topic1 {
+    width: 350px;
+    margin: auto;
+/*    display: block;*/
+}
+.topic1 h2 {
+    text-align: center;
+    color: #e85000;
+    margin: 12px 0 20px 0;
+}
+/*
+.topic1 img {
+    margin: auto;
+}
+/*
+.topic1にdisplay:blockとmg-aしてるのにimgに効かないののぜ。
+その上のdisplay:flexが強く出ているから？
+さらに、topic1にdisplay:block書かずにmg-aしてもimgが中央に行かないのは
+理解できるけど、ただimgにmg-aして中央に行くのが分からない。display:blockでブロック要素にしてないのに。*/
+.topic1 p {
+    line-height: 1.5;
+    margin-bottom: 26px;
+}
+
+.btn {
+    float: left;
+}
+.btn a {
+    width: 60px;
+    height: 40px;
+    background-color: #e85000;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 3px;
+}
+.btn:last-child a{
+    background-color: #ffc108;
+    color: black;
+}
+.btn:nth-of-type(2){
+    margin-left: 9px;
+}
+/*nth-of-typeで手前にliいれるとダメ。なぜ？
+nth-of-childもだめ。要素は１種類だからtypeもchildも同じ結果になるんじゃないの？*/
+
+
+.bottom-banner li {
+    display: inline-block;
+    margin-right: 20px;
+}
+/*↑計算的にはmg-r26pxで横並びになるはず。
+とゆうかbtnの設定をボタン一つづつにclassつけて親要素をdisplay:flexしてたときは
+いけてた。何が原因かわからない。*/
+.bottom-banner li:last-child {
+    margin-right: 0;
+}
+
+footer {
+    height: 176px;
+    background-color: #343a40;
+}
+
+.footer {
+    color: #d4d3d3;
+    padding-top: 50px;
+}
+
+.footer a {
+    color: #e85000;
+}
